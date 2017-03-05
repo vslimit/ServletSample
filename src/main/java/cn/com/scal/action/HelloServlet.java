@@ -15,8 +15,8 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/html");
-//        PrintWriter out = resp.getWriter();
-        out.println("<html>")
+        PrintWriter out = resp.getWriter();
+        out.println("<html>");
         out.println("<font size=30 color=red>www.hello.org</font><br>");
         out.println("<marquee>" + new java.util.Date() + "<marquee>");
         out.println("<html>");
